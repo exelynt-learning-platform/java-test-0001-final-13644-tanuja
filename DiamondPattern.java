@@ -1,21 +1,21 @@
 public class DiamondPattern {
 
-    private static final int ROWS = 5; 
+    private static final int DIAMOND_HEIGHT_HALF = 5;
 
     public static void main(String[] args) {
 
-        for (int row = 1; row <= ROWS; row++) {
+        for (int row = 1; row <= DIAMOND_HEIGHT_HALF; row++) {
             printRow(row);
         }
 
-        for (int row = ROWS - 1; row >= 1; row--) {
+        for (int row = DIAMOND_HEIGHT_HALF - 1; row >= 1; row--) {
             printRow(row);
         }
     }
 
     private static void printRow(int currentRow) {
 
-        for (int space = 1; space <= ROWS - currentRow; space++) {
+        for (int space = 1; space <= DIAMOND_HEIGHT_HALF - currentRow; space++) {
             System.out.print(" ");
         }
 
